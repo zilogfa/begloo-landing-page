@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BEGLOO, a visionary holding brand founded by Ali Jafarbeglou, creates innovative solutions in software development, gaming, and beyond.">
+  <meta name="keywords" content="BEGLOO, software development, gaming, SaaS, innovation, technology, Washington LLC, Ali Jafarbeglou, Ali J Begloo">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ali Jafarbeglou">
+  <meta property="og:title" content="BEGLOO - Build Bold. Innovate Now.">
+  <meta property="og:description" content="Discover BEGLOO, a Washington-based LLC founded by Ali Jafarbeglou, pushing boundaries in software development and gaming.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://begloo.io">
+  <meta property="og:image" id="og-image" content="">
+  <link rel="canonical" href="https://begloo.io">
+  <title>BEGLOO - Build Bold</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="icon" id="favicon" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: linear-gradient(135deg, #1A1A1A 0%, #2A2A2A 100%);
+      color: #E0E0E0;
+      min-height: 100vh;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      padding: 20px;
+    }
+
+    .logo {
+      font-size: 100px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-shadow: 0 0 10px rgba(0, 163, 255, 0.5);
+      margin-bottom: 20px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #FFD700, #FF8C00); /* Warm gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-title {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(90deg, #00A3FF, #8B00FF); /* Cool gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .section-text {
+      font-size: 18px;
+      font-weight: 400;
+      color: #E0E0E0;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    footer {
+      padding: 20px;
+      padding-bottom: 40px;
+      text-align: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    footer a {
+      color: #00A3FF;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 60px;
+      }
+      .tagline {
+        font-size: 16px;
+      }
+      .about-title {
+        font-size: 28px;
+      }
+      .section-text {
+        font-size: 16px;
+      }
+      footer a {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="section hero">
+    <h1 class="logo">BEGLOO</h1>
+    <p class="tagline">Build Bold. Innovate Now.</p>
+    <!-- Alternative tagline: <p class="tagline">Build Bold</p> -->
+  </div>
+  <div class="section about">
+    <h2 class="about-title">Forge the Future</h2>
+<p class="section-text">BEGLOO is a visionary holding brand founded by Ali Jafarbeglou, established as an LLC in Washington State. We are passionate about pushing boundaries in software development, gaming, and beyond. Our mission is to create innovative solutions that inspire and empower.</p>  </div>
+  <footer>
+    <p>Reach out at <a href="mailto:info@begloo.io">info@begloo.io</a></p>
+  </footer>
+
+  <script>
+    // Generate favicon
+    const faviconCanvas = document.createElement('canvas');
+    faviconCanvas.width = 32;
+    faviconCanvas.height = 32;
+    const faviconCtx = faviconCanvas.getContext('2d');
+    faviconCtx.fillStyle = '#1A1A1A';
+    faviconCtx.fillRect(0, 0, 32, 32);
+    faviconCtx.font = 'bold 24px Manrope';
+    faviconCtx.fillStyle = '#FFFFFF';
+    faviconCtx.textAlign = 'center';
+    faviconCtx.textBaseline = 'middle';
+    faviconCtx.fillText('B', 16, 16);
+    const favicon = document.getElementById('favicon');
+    favicon.href = faviconCanvas.toDataURL('image/png');
+
+    // Generate og:image
+    const ogCanvas = document.createElement('canvas');
+    ogCanvas.width = 1200;
+    ogCanvas.height = 630;
+    const ogCtx = ogCanvas.getContext('2d');
+    const gradient = ogCtx.createLinearGradient(0, 0, 1200, 630);
+    gradient.addColorStop(0, '#1A1A1A');
+    gradient.addColorStop(1, '#2A2A2A');
+    ogCtx.fillStyle = gradient;
+    ogCtx.fillRect(0, 0, 1200, 630);
+    const colors = ['#00A3FF', '#8B00FF', '#00FFAA', '#FFEB3B', '#FF9800', '#FF5252'];
+    for (let i = 0; i < 20; i++) {
+      ogCtx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+      ogCtx.globalAlpha = 0.4;
+      const x = Math.random() * 1200;
+      const y = Math.random() * 630;
+      ogCtx.beginPath();
+      ogCtx.arc(x, y, Math.random() * 5 + 2, 0, 2 * Math.PI);
+      ogCtx.fill();
+    }
+    ogCtx.globalAlpha = 1.0;
+    ogCtx.font = 'bold 150px Manrope';
+    ogCtx.fillStyle = '#FFFFFF';
+    ogCtx.textAlign = 'center';
+    ogCtx.textBaseline = 'middle';
+    ogCtx.shadowColor = 'rgba(0, 163, 255, 0.5)';
+    ogCtx.shadowBlur = 10;
+    ogCtx.fillText('BEGLOO', 600, 250);
+    ogCtx.font = '400 40px Manrope';
+    ogCtx.shadowBlur = 0;
+    ogCtx.fillText('Build Bold. Innovate Now.', 600, 350);
+    const ogImage = document.getElementById('og-image');
+    ogImage.content = ogCanvas.toDataURL('image/png');
+
+    // Particles.js configuration
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: ['#00A3FF', '#8B00FF', '#00FFAA', '#FFEB3B', '#FF9800', '#FF5252'] },
+        shape: { type: 'circle' },
+        opacity: { value: 0.4, random: true, anim: { enable: true, speed: 0.5, opacity_min: 0.1, sync: false } },
+        size: { value: 5, random: true },
+        line_linked: { enable: false },
+        move: {
+          enable: true,
+          speed: 0.5,
+          direction: 'none',
+          random: true,
+          out_mode: 'out'
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: { onhover: { enable: false }, onclick: { enable: false } },
+        modes: { repulse: { distance: 100 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
